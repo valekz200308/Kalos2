@@ -84,6 +84,8 @@
 .navigation li {
     list-style-type: none;
     padding: 15px;
+    display: flex;
+    flex-direction: row;
 }
 
 .navigation a {
@@ -115,10 +117,10 @@
 }
 
 .active {
-    background-color: rgb(1, 125, 207);
+    background-color: rgb(52, 211, 223);
     color: white;
     padding: 20px;
-    border-radius: 50px;
+    border-radius: 55px;
 }
 
 .active:hover {
@@ -159,7 +161,7 @@ h2 {
     position: relative;
     margin-right: 180px;
     margin-left: 50px;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 .card-img:hover img {
@@ -217,7 +219,7 @@ h2 {
     aspect-ratio: 1/1;
     transition: all 600ms ease-in-out;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 20%;
     object-position: center;
 }
 
@@ -408,7 +410,6 @@ h2 {
     background-color: rgba(255, 255, 255, 0.384);
     margin: 10px;
     border-radius: 25px;
-    box-shadow: 5px 5px 30px #999;
     overflow: hidden;
     position: relative;
     box-sizing: border-box;
@@ -601,18 +602,26 @@ footer{
 
 }
 
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 1500px) {
+    .fContainer {
+        height: 150vh;
+    }
+
+    .fContaineragt {
+        height: 450vh;
+    }
+
     .cards {
         grid-template-columns: auto auto;
     }
 
     .wrapper {
-        width: 900px;
+        width: 500px;
         height: 90px;
     }
 
     .wrapper:hover {
-        width: 950px;
+        width: 550px;
         height: 95px;
     }
 
