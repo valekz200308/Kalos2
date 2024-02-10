@@ -123,7 +123,7 @@
     border-radius: 55px;
 }
 
-.active:hover {
+.active a:hover {
     color: white !important;
 }
 
