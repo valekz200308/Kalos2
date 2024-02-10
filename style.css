@@ -399,7 +399,7 @@ h2 {
 
 .foto {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
 }
 
 .foto img {
