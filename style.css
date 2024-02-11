@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Protest+Strike&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -396,15 +405,6 @@ h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 18px;
-}
-
-@keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
 }
 
 .foto {
