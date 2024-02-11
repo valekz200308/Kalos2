@@ -419,7 +419,8 @@ h2 {
 .foto {
     display: grid;
     grid-template-columns: auto auto auto;
-    transition:  fadeIn .9s ease-in-out;
+    
+    animation: scale-up-center 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .foto img {
