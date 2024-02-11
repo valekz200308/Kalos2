@@ -593,7 +593,7 @@ h2 {
 /* Music */
 
 .music {
-    width: 400px;
+    width: 380px;
     height: 500px;
     background-color: #ffffff2d;
     margin: 10px;
@@ -612,19 +612,13 @@ h2 {
 
 .music .musicimg {
     background-size: cover;
-    padding: 5px;
     position: relative;
+    top: -13px;
 }
 
 .musicimg img {
     width: 350px;
     border-radius: 10px;
-}
-
-.audio {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
 }
 
 .konten {
