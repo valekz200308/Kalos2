@@ -626,24 +626,25 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .konten .nama {
     font-family: 'Anton', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #0f1623;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .konten .info {
     font-family: 'PT Serif', Tahoma, Geneva, Verdana, sans-serif;
     font-weight:500;
-    font-size: 18px;
+    font-size: 25px;
 }
 
-h6 {
-    flex-direction: column;
+.music h6 {
+  padding-top: 15px;
+  flex-direction: column;
 }
 
 /* The footer is fixed to the bottom of the page */
