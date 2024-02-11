@@ -627,6 +627,7 @@ h2 {
     justify-content: center;
     align-items: center;
     padding-top: 10px;
+    padding-bottom: 15px;
 }
 
 .konten .nama {
@@ -643,7 +644,6 @@ h2 {
 }
 
 .music h6 {
-  padding-top: 15px;
   flex-direction: column;
 }
 
