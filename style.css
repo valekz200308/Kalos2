@@ -276,6 +276,7 @@ h2 {
 .cards {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    animation: fadeIn 6s ease-in-out;
 }
 
 .card .img {
@@ -397,12 +398,29 @@ h2 {
     font-size: 18px;
 }
 
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  
+.rect-animate {
+    width: 200px;
+    height: 100px;
+    animation: fadeIn 6s ease-in-out;
+}
+
 .foto {
     display: grid;
     grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
 }
 
-.foto img {
+.rect-animate .foto img {
     width: 500px;
     background-color: rgba(255, 255, 255, 0.384);
     margin: 10px;
@@ -412,7 +430,7 @@ h2 {
     position: relative;
     box-sizing: border-box;
     top: 100px;
-}
+}  
 
 .video video {
     max-width: 450px;
@@ -611,7 +629,7 @@ footer{
 
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1200px) {
     .fContainer {
         height: 150vh;
     }
