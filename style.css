@@ -483,7 +483,7 @@ h2 {
 
 .music {
     width: 400px;
-    height: 600px;
+    height: 500px;
     background-color: #ffffff62;
     margin: 10px;
     border-radius: 25px;
@@ -499,9 +499,9 @@ h2 {
     animation: slide-in-elliptic-bottom-fwd 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.musicimg {
+.music .musicimg {
     background-size: cover;
-    padding: 10px;
+    padding: 5px;
     position: relative;
 }
 
