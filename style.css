@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Protest+Strike&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
+@keyframes scale-up-center {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
 @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -160,6 +169,7 @@ main h1 {
     text-align: center;
     font-family: 'Protest Strike', 'arial', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 50px;
+    animation: fadeIn .5s ease-in-out;
 }
 
 h2 {
@@ -235,7 +245,6 @@ h2 {
     justify-content: center;
     width: 100%;
     aspect-ratio: 1/1;
-    transition: all 600ms ease-in-out;
     object-fit: cover;
     border-radius: 20%;
     object-position: center;
@@ -285,7 +294,7 @@ h2 {
 .cards {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    animation: fadeIn 6s ease-in-out;
+    animation: fadeIn .5s ease-in-out;
 }
 
 .card .img {
@@ -410,7 +419,7 @@ h2 {
 .foto {
     display: grid;
     grid-template-columns: auto auto auto;
-    transition:  fadeIn 6s ease-in-out;
+    transition:  fadeIn .9s ease-in-out;
 }
 
 .foto img {
@@ -439,6 +448,7 @@ h2 {
     filter: brightness(87%);
     filter: saturate(90%);
 }
+
 
 /* The footer is fixed to the bottom of the page */
 
