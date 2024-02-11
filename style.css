@@ -613,7 +613,7 @@ h2 {
 .music .musicimg {
     background-size: cover;
     position: relative;
-    top: -13px;
+    top: 3px;
 }
 
 .musicimg img {
