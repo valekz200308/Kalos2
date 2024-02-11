@@ -3,6 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@keyframes roll-in-blurred-left {
+    0% {
+      transform: translateX(-1000px) rotate(-720deg);
+      filter: blur(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0) rotate(0deg);
+      filter: blur(0);
+      opacity: 1;
+    }
+}
+
 @keyframes bounce-in-top {
     0% {
       transform: translateY(-500px);
@@ -484,10 +497,10 @@ h2 {
 .music {
     width: 400px;
     height: 500px;
-    background-color: #ffffff62;
+    background-color: #ffffff2d;
     margin: 10px;
     border-radius: 25px;
-    box-shadow: 5px 5px 25px #999;
+    box-shadow: 5px 5px 25px #9999995b;
     overflow: hidden;
     position: relative;
     box-sizing: border-box;
@@ -496,7 +509,7 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    animation: slide-in-elliptic-bottom-fwd 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: roll-in-blurred-left 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
 
 .music .musicimg {
@@ -521,7 +534,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding-top: 20px;
 }
 
 .konten .nama {
