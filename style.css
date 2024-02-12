@@ -3,6 +3,34 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@keyframes tracking-in-expand-fwd-top {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px) translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes flicker-in-1 {
     0% {
       opacity: 0;
@@ -99,15 +127,34 @@
     }
   }
 
-@keyframes roll-in-blurred-left {
+@keyframes vibrate-1 {
     0% {
-      transform: translateX(-1000px) rotate(-720deg);
-      filter: blur(50px);
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+}
+
+@keyframes tilt-in-tl {
+    0% {
+      transform: rotateY(35deg) rotateX(20deg) translate(-250px, -250px) skew(12deg, 15deg);
       opacity: 0;
     }
     100% {
-      transform: translateX(0) rotate(0deg);
-      filter: blur(0);
+      transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
       opacity: 1;
     }
 }
@@ -413,7 +460,7 @@ h2 {
     margin-top: 4rem;
     margin-bottom: 1rem;
     color: #270d3f;
-    animation: flicker-in-1 3s linear both;
+    animation: tracking-in-expand-fwd-top 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 .card {
@@ -593,8 +640,8 @@ h2 {
 /* Music */
 
 .music {
-    width: 380px;
-    height: 500px;
+    width: 480px;
+    height: 700px;
     background-color: #ffffff2d;
     margin: 10px;
     border-radius: 25px;
@@ -607,18 +654,18 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    animation: roll-in-blurred-left 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: tilt-in-tl 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .music .musicimg {
     background-size: cover;
     position: relative;
-    top: 3px;
+    top: -10px;
 }
 
 .musicimg img {
-    width: 350px;
-    border-radius: 10px;
+    width: 450px;
+    border-radius: 15px;
 }
 
 .konten {
@@ -626,25 +673,39 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 2rem;
 }
 
 .konten .nama {
     font-family: 'Anton', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #0f1623;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .konten .info {
     font-family: 'PT Serif', Tahoma, Geneva, Verdana, sans-serif;
     font-weight:500;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .music h6 {
   flex-direction: column;
+}
+
+.musicnote {
+  font-size: 50px;
+  padding-top: 30px;
+  margin-bottom: -50px;
+}
+
+.musicnote h6 {
+  animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.musicnote h6 {
+  font-family: 'Protest Riot', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* The footer is fixed to the bottom of the page */
