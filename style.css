@@ -211,7 +211,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --parent-height : 20em ;
+    --parent-height : 30em ;
     --duration: 1s ;
     --duration-text-wrap: 12s 1.5s cubic-bezier(0.82, 0.82, 1, 1.01) ;
     --cubic-header: var(--duration) cubic-bezier(0.71, 0.21, 0.3, 0.95) ;
@@ -1235,7 +1235,7 @@ footer{
     }
 
     .fContaineragt {
-        height: 1570vh;
+        height: 1650vh;
     }
 
     .fContainerkngn {
