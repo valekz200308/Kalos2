@@ -672,7 +672,7 @@ main h2 {
 
 .musicimg img {
     width: 450px;
-    border-radius: 40px;
+    border-radius: 30px;
 }
 
 .konten {
@@ -681,7 +681,7 @@ main h2 {
     justify-content: center;
     align-items: center;
     padding-top: 20px;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .konten .nama {
@@ -1062,5 +1062,9 @@ footer{
 
     .musicimg img {
       width: 550px;
+    }
+
+    .music h6 {
+      font-size: 20px;
     }
 }
