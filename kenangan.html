@@ -59,31 +59,116 @@
       <div class="petinggiagt">
         <h1>kenangan kelas kami! 😘</h1>
       </div>
-      <div class="musicnote">
-        <h6>Music by:</h6>
-      </div>
     <!--Isi/MAteri-->
     <!--Musik-->
-    <div class="music">
-      <div class="musicimg">
-        <img src="img/TujuhBelas.jpg" alt="TujuhBelas">
-      </div>
-      <div class="konten">
-        <div class="nama">Tujuh Belas</div>
-          <div class="info">
-          Tulus
+    <div class="player">
+
+      <div class="player__header">
+  
+        <div class="player__img player__img--absolute slider">
+  
+          <button class="player__button player__button--absolute--nw playlist">
+  
+            <img src="http://physical-authority.surge.sh/imgs/icon/playlist.svg" alt="playlist-icon">
+  
+          </button>
+  
+          <button class="player__button player__button--absolute--center play">
+  
+            <img src="http://physical-authority.surge.sh/imgs/icon/play.svg" alt="play-icon">
+            <img src="http://physical-authority.surge.sh/imgs/icon/pause.svg" alt="pause-icon">
+  
+          </button>
+  
+          <div class="slider__content">
+  
+            <img class="img slider__img" src="music/TujuhBelas.jpg" alt="cover">
+            <img class="img slider__img" src="music/Jendela Kelas 1.png" alt="cover">
+            <img class="img slider__img" src="http://physical-authority.surge.sh/imgs/3.jpg" alt="cover">
+            <img class="img slider__img" src="http://physical-authority.surge.sh/imgs/4.jpg" alt="cover">
+            <img class="img slider__img" src="http://physical-authority.surge.sh/imgs/5.jpg" alt="cover">
+            <img class="img slider__img" src="http://physical-authority.surge.sh/imgs/6.jpg" alt="cover">
+            <img class="img slider__img" src="http://physical-authority.surge.sh/imgs/7.jpg" alt="cover">
+  
+          </div>
+  
         </div>
+  
+        <div class="player__controls">
+  
+          <button class="player__button back">
+  
+            <img class="img" src="http://physical-authority.surge.sh/imgs/icon/back.svg" alt="back-icon">
+  
+          </button>
+          
+          <p class="player__context slider__context">
+  
+            <strong class="slider__name"></strong>
+            <span class="player__title slider__title"></span>
+  
+          </p>
+  
+          <button class="player__button next">
+  
+            <img class="img" src="http://physical-authority.surge.sh/imgs/icon/next.svg" alt="next-icon">
+  
+          </button>
+  
+          <div class="progres">
+  
+            <div class="progres__filled"></div>
+  
+          </div>
+  
+        </div>
+  
       </div>
-      <h6>Note: Lagu ini otomatis diputar</h6>
-      <h6>Usahakan Menggunakan Chrome</h6>
-    </div>
-    <!---->
-    <!--Music Control-->
-    <div class="audio">
-      <audio controls autoplay>
-        <source src="music/Tujuh Belas.mp3" type="audio/mp3">
-        Browser Anda tidak mendukung elemen lagu ini, update Browsermu!.
-      </audio>
+  
+      <ul class="player__playlist list">
+  
+        <li class="player__song">
+  
+          <img class="player__img img" src="music/TujuhBelas.jpg" alt="cover">
+  
+          <p class="player__context">
+  
+            <b class="player__song-name">Tujuh Belas</b>
+            <span class="flex">
+  
+              <span class="player__title">Tulus</span>
+              <span class="player__song-time"></span>
+  
+            </span>
+  
+          </p>
+  
+          <audio class="audio" src="music/Tujuh Belas.mp3"></audio>
+  
+        </li>
+  
+        <li class="player__song">
+  
+          <img class="player__img img" src="music/Jendela Kelas 1.png" alt="cover">
+  
+          <p class="player__context">
+  
+            <b class="player__song-name">Jendela Kelas 1</b>
+            <span class="flex">
+  
+              <span class="player__title">Iwan Vals</span>
+              <span class="player__song-time"></span>
+  
+            </span>
+            
+          </p>
+  
+          <audio class="audio" src="music/Jendela Kelas 1.mp3"></audio>
+  
+        </li>
+  
+      </ul>
+  
     </div>
     <!---->
     <!--kenangan+foto-->
@@ -142,4 +227,5 @@
     </div>
   </footer>
 </body>
+<script src="script.js"></script>
 </html>
