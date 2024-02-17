@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 
 
 @keyframes tracking-in-expand-fwd-top {
@@ -17,6 +20,48 @@
   100% {
     transform: translateZ(0) translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
   }
 }
 
@@ -232,7 +277,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 480vh;
+    height: 700vh;
     background: linear-gradient(to right, #05deee, #6415e2);
 }
 
@@ -419,9 +464,7 @@ main h2 {
     display: grid;
     margin-top: 15rem;
     border-radius: 30px;
-    background: linear-gradient(120deg, #05deee, #6415e2);
-    box-shadow:  35px 35px 70px #05deee54,
-                -35px -35px 70px #6415e273;
+    filter: drop-shadow(9px 13px 60px #3d3d3d);
 }
 
 .galery h3 {
@@ -635,7 +678,48 @@ main h2 {
     position: relative;
     box-sizing: border-box;
     top: 100px;
-}  
+}
+
+.teks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+}
+
+.teks h2 {
+  font-size: 5.5vh;
+  font-family: 'Protest Strike', 'Times New Roman', Times, serif;
+  font-weight: 100;
+  animation: vibrate-1 0.3s linear infinite both;
+}
+
+.teks h3 {
+  font-size: 4.5vh;
+  font-weight: 100;
+  font-family: 'Anton','Times New Roman', Times, serif;
+  animation: vibrate-1 0.3s linear infinite both;
+}
+
+.teks h4 {
+  font-size: 4.5vh;
+  font-weight: 100;
+  text-align: center;
+  font-family: 'Shrikhand';
+  animation: flicker-5 8s linear infinite both;
+  filter: drop-shadow(9px 13px 60px #ffffff);
+}
+.sabkot img {
+  margin-top: 20px;
+  width: 500px;
+  border-radius: 40px;
+  background: linear-gradient(145deg, #6415e2, #05deee);
+  box-shadow:  40px 40px 80px #6c6c6c,
+             -40px -40px 80px #ffffff;
+             animation: vibrate-1 2s ease-in-out infinite both;
+}
 
 .video video {
     max-width: 450px;
@@ -1228,7 +1312,7 @@ footer{
 
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 990px) {
     .fContainer {
         height: 300vh;
     }
@@ -1238,7 +1322,7 @@ footer{
     }
 
     .fContainerkngn {
-      height: 760vh;
+      height: 900vh;
     }
 
     .cards {
@@ -1381,6 +1465,16 @@ footer{
         width: 800px;
         margin: 50px;
     }
+
+    .teks h4 {
+      font-size: 3rem;
+      margin: 30px;
+    }
+
+    .sabkot img {
+      width: 800px;
+    }
+    
 
     /* Music Player */
 
