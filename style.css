@@ -293,7 +293,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   background: linear-gradient(to right, #05deee, #6415e2);
 }
 
@@ -737,7 +737,7 @@ main h2 {
 }
 
 .teks404 h1 {
-  font-size: 4vh;
+  font-size: 50px;
   font-weight: bold;
   margin: 5rem;
   text-align: center;
@@ -1359,6 +1359,10 @@ footer{
       height: 900vh;
     }
 
+    .fContainer404 {
+      height: 100vh;
+    }
+
     .cards {
         grid-template-columns: auto;
     }
@@ -1507,6 +1511,17 @@ footer{
 
     .sabkot img {
       width: 800px;
+    }
+
+    .petinggi404 {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-size: 1.2rem;
+    }
+
+    .teks404 h1 {
+      font-size: 40px;
     }
     
 
