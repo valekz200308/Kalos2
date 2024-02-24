@@ -289,6 +289,14 @@
     background: linear-gradient(to right, #05deee, #6415e2);
 }
 
+.fContainer404 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #05deee, #6415e2);
+}
+
 .wrapper {
     display: flex;
     justify-content: space-between;
@@ -519,6 +527,19 @@ main h2 {
     animation: tracking-in-expand-fwd-top 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
+.petinggi404 {
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-family: 'Protest Strike', 'Times New Roman', Times, serif;
+  font-size: 2vb;
+  margin-top: -1vh;
+  margin-bottom: 1rem;
+  color: #270d3f;
+}
+
 .card {
     width: 300px;
     height: 390px;
@@ -711,13 +732,23 @@ main h2 {
   animation: flicker-5 8s linear infinite both;
   filter: drop-shadow(9px 13px 60px #ffffff);
 }
+
+.teks404 h1 {
+  font-size: 4vh;
+  font-weight: bold;
+  margin: 5rem;
+  text-align: center;
+  font-family: 'Times New Roman';
+  color: #000000;
+}
+
 .sabkot img {
   margin-top: 20px;
   width: 500px;
   border-radius: 40px;
-  background: linear-gradient(145deg, #6415e2, #05deee);
-  box-shadow:  40px 40px 80px #6c6c6c,
-             -40px -40px 80px #ffffff;
+  background: linear-gradient(10deg, #6415e2, #05deee);
+  box-shadow:  35px 35px 70px #6c6c6c,
+              -35px -35px 70px #ffffff93;
              animation: vibrate-1 2s ease-in-out infinite both;
 }
 
