@@ -435,13 +435,15 @@ main h2 {
     aspect-ratio: 1/1;
     overflow: hidden;
     position: relative;
-    margin-right: 180px;
-    margin-left: 50px;
+    margin-left: 40%;
+    margin-right: 40%;
     border-radius: 20%;
+    transition: all .5s ease-in;
 }
 
 .card-img:hover img {
     transform: scale(1.05);
+    transition: all .5s ease-in;
 }
 
 .card-img .caption {
@@ -491,12 +493,13 @@ main h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5em;
+    margin-bottom: auto;
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 20%;
     object-position: center;
+    transition: all .5s ease-in;
 }
 
 .petinggi h1 {
